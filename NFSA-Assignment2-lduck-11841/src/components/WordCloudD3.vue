@@ -7,7 +7,7 @@ export default {
 
 
 
-    mounted() {
+    methods() {
         var myWords = ["Hello", "Everybody", "How", "Are", "You", "Today", "It", "Is", "A", "Lovely", "Day", "I", "Love", "Coding", "In", "My", "Van", "Mate"]
 
     // set the dimensions and margins of the graph
