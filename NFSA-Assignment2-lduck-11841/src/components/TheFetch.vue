@@ -1,9 +1,6 @@
 <script>
 export default {
   name: 'TheFetch',
-  props: {
-    msg: String
-  },
   data() {
     return {
       theData: {},

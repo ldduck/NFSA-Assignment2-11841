@@ -1,10 +1,11 @@
 <script>
-import TheFetch from '@/components/TheFetch.vue'
+import AlternateComp from '@/components/AlternateComp.vue'
 </script>
 
 <template>
   <div class="alternate">
-    <TheFetch />
+    
+    <AlternateComp />
   </div>
 </template>
 

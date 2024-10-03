@@ -7,17 +7,7 @@ export default {
     return {
       theData: {},
       theArray: [],
-      wordsArray: [],
-      duckArray: [
-        { text: 'duck', weight: 100 },
-        { text: 'mallard', weight: 80 },
-        { text: 'quack', weight: 60 },
-        { text: 'water', weight: 50 },
-        { text: 'fowl', weight: 40 },
-        { text: 'webbed', weight: 30 },
-        { text: 'feathers', weight: 20 },
-        { text: 'wings', weight: 10 }
-      ]
+
     }
   },
 
@@ -32,15 +22,13 @@ export default {
             this.$data.theData = res
             const results = this.$data.theData
 
-            this.$data.theArray = results.meta.facet.year.buckets
-            this.$data.wordsArray = []
+            // this.$data.theArray = results.meta.facet.year.buckets
+           
 
-            this.$data.theArray.forEach((element) => {
-              element.text = element['_id']
-              element.weight = element['count']
-              this.$data.wordsArray.push([element.text, element.weight])
-            })
-            console.log(this.$data.wordsArray)
+            // this.$data.theArray.forEach((element) => {
+            //   element.text = element['_id']
+            //   element.weight = element['count']
+            //   this.$data.wordsArray.push([element.text, element.weight])
           })
           .catch((err) => {
             console.error(err)
@@ -48,9 +36,9 @@ export default {
       })
     }
   },
-  mounted() {
-    this.fetchData()
-  }
+  // mounted() {
+  //   this.fetchData()
+  // }
 }
 </script>
 

@@ -1,10 +1,10 @@
 <script setup>
-import WordCloud from '@/components/WordCloud.vue'
+import WordCloudD3 from '@/components/WordCloudD3.vue'
 </script>
 
 <template>
   <main>
-    <WordCloud />
+    <WordCloudD3 />
   </main>
 </template>
 
