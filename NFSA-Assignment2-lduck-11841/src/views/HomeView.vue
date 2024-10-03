@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import WordCloud from '@/components/WordCloud.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <WordCloud />
   </main>
 </template>
+
+<style></style>
